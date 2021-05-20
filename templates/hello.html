@@ -8,54 +8,41 @@
 <body>
 
     <div class="wrapper">
-        <div class="container">
-            <!-- <table id="userdata" border="2">
-                <thead>
-                    <th>First Name</th>
-                    <th>Last Name</th>
-                    <th>Email Address</th>
-                    <th>City</th>
-                </thead>
-                <tbody>
-
-                </tbody>
-            </table> -->
+        <div class="container" id="myData">
+            
 
         </div>
+        <table id="userdata" border="2">
+            <thead>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Email Address</th>
+                <th>City</th>
+            </thead>
+            <tbody>
+
+            </tbody>
+        </table>
     </div>
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"> </script>
 
     <script>
-    //     const jsonfile = JSON.parse("{{json_text}}");
-    //   console.log(jsonfile);
-      document.querySelector(".container").innerHTML = "{{json_text}}";
-        var json_text = "{{json_text}}";
-        console.log(json_text)
-        // $(function () {
-        //     var people = [];
+        $(function() {
+            // have to be 'tojson'
+            // jsonfile = JSON.parse('{{json_text}}');
+            // console.log(jsonfile);
+    
+            jsonfile = JSON.parse('{{json_text | tojson}}');
+            console.log(jsonfile);
+            document.querySelector(".container").innerHTML = "{{json_text}}";
+            var people = [];
+            $.each(jsonfile.person, function(i, f) {
+            var tblRow = "<tr>" + "<td>" + f.firstName + "</td>" +
+                "<td>" + f.lastName + "</td>" + "<td>" + f.job + "</td>" + "<td>" + f.roll + "</td>" + "</tr>"
+                $(tblRow).appendTo("#userdata tbody");
+            });
+        });
 
-            
-        //     var request = new XMLHttpRequest();
-        //     // request.open('GET', 'file://people.json', true);
-
-        //     request.onload = function () {
-        //         if (request.status >= 200 && request.status < 400) {
-        //             // Success!
-        //             var data = JSON.parse(json_text);
-        //             $.each(data.person, function (i, f) {
-        //                 console.log(f.firstName);
-        //                 var tblRow = "<tr>" + "<td>" + f.firstName + "</td>" +
-        //                     "<td>" + f.lastName + "</td>" + "<td>" + f.job + "</td>" + "<td>" + f.roll + "</td>" + "</tr>"
-        //                 $(tblRow).appendTo("#userdata tbody");
-        //             });
-        //         }
-        //     };
-        //     request.onerror = function () {
-        //         // There was a connection error of some sort
-        //         console.log("Request Error")
-        //     };
-        //     request.send();
-        // });
     </script>
 </body>
 

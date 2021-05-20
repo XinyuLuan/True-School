@@ -32,7 +32,8 @@ def hello():
     print(text)
     print(type(text))
     f.close()
-    return render_template('hello.html', json_text = json.dumps(text))
+    # return render_template('hello.html', json_text = json.dumps(text))
+    return render_template('hello.html', json_text = text)
 
 @app.route("/admin")
 def admin():
