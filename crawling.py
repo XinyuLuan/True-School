@@ -54,21 +54,29 @@ class WebCrawler:
         self.save_to_be_visit_result(self.to_be_visited_set)
 
     def crawl_outlinks(self, page_url: str) -> List:
-        if page_url.endswith('.html'):
-            html = req.get(page_url).content.decode('utf-8') # Parse html file (e.g., https://www.test.com/main.html)
-        else: 
-            html = urlopen(page_url).read().decode('utf-8') # Parse regular URL (e.g., https://www.techcruntch.com)
-        outlinks = self.collect_outlinks(page_url, html)
-        # print("---- crawling down url -----")
+        outlinks = None
+        try:
+            if page_url.endswith('.html'):
+                html = req.get(page_url).content.decode('utf-8') # Parse html file (e.g., https://www.test.com/main.html)
+            else: 
+                html = urlopen(page_url).read().decode('utf-8') # Parse regular URL (e.g., https://www.techcruntch.com)
 
-        outlinks = list(outlinks)
-        for idx, outlink in enumerate(outlinks):
-            outlinks[idx] = self.generate_outlinks_url(outlink)
+            # print("---- crawling down url -----")
+            outlinks = self.collect_outlinks(page_url, html)
+            outlinks = list(outlinks)
+            for idx, outlink in enumerate(outlinks):
+                outlinks[idx] = self.generate_outlinks_url(outlink)
             # print(idx, ":", outlinks[idx])
+            
+        except:
+            pass
 
         return outlinks
+        
 
     def collect_outlinks(self, page_url : str, html : str) -> set:
+        if html is None:
+            return None
         soup = BeautifulSoup(html, features='html.parser')
         all_a_tags = soup.find_all('a')
         all_a_tags = filter(lambda tag: tag.get('href') is not None, all_a_tags)
@@ -117,7 +125,8 @@ class WebCrawler:
         visited_pd.to_csv(file_name)
     
 # seed = "https://admission.universityofcalifornia.edu/how-to-apply/applying-as-a-freshman/"
-seed = "https://admission.universityofcalifornia.edu/how-to-apply/"
+# seed = "https://admission.universityofcalifornia.edu/how-to-apply/"
+seed = "https://www.admissions.caltech.edu/apply/first-year-freshman-applicants/application-requirements"
 webCrawler = WebCrawler(seed)
 webCrawler.crawl_new_page() 
 
@@ -125,7 +134,7 @@ def generate_outlink_url_tester():
     seed = "https://admission.universityofcalifornia.edu/how-to-apply/applying-as-a-freshman/"
     webCrawler = WebCrawler(seed)
     print("seed path:", webCrawler.seed_path)
-    # webCrawler.crawl_new_page() 
+    webCrawler.crawl_new_page() 
     outlink = "../../admission-requirements/transfer-requirements/transfer-pathways/index.html"
     webCrawler.generate_outlinks_url(outlink)
 

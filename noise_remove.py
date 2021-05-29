@@ -1,37 +1,17 @@
-# import codecs
 from typing import List, Pattern
 from bs4 import BeautifulSoup
 from urllib import request
 import requests as req
 from urllib.request import urlopen
 import nltk
-import re
-import json
 
 class Noise_remover:
-
-    class Deadline:
-        def __init__(self, title, date) -> None:
-            self.deadline_title = title
-            self.date = date
-        def __str__(self) -> str:
-            return '{}: {}'.format(self.deadline_title, self.date)
-        def __repr__(self) -> str:
-            return '{}: {}'.format(self.deadline_title, self.date)
-    
-    DEADLINE_PATTERN = '(?P<date>(May|March|June)\s[0-9]{1,2})\s([^.]*)Deadline\s(?P<deadline_title>[^.]+)\.'
-    SEMESTER_PATTERN = '(?P<semester>(Fall|Spring|Summer|Winter)\s20[0-9]{1,2})'
     prefix_tags = [0]
 
     def __init__(self) -> None:
-        self.pages = []
-        self.uc_data = {'name' : 'University of California', 'deadlines' : []}
-
-    def get_clear_content(self):
-        self.pages = self.get_url_from_file('visited/pages.csv')
-        for page in self.pages:
-            # print(page)
-            self.noise_remove(page)
+        # self.pages = []
+        # self.uc_data = {'name' : 'University of California', 'deadlines' : []}
+        pass
     
     def noise_remove(self, url : str) -> str:
         if url.endswith('.html'):
@@ -39,6 +19,7 @@ class Noise_remover:
         else: 
             html = urlopen(url).read().decode('utf-8') # Parse regular URL (e.g., https://www.techcruntch.com)
         soup = BeautifulSoup(html, "html.parser")
+        # soup = BeautifulSoup(html)
         # print(soup.prettify())
         body = soup.find("body")
         # print(body.get_text())
@@ -60,6 +41,9 @@ class Noise_remover:
                 b.extract()
             for b in body.select("style"):
                 b.extract()
+            for b in body.find_all("div", {"class" : "uw-footer"}):
+                b.extract()
+            
         
         # print("body: ", body)   # body type:  <class 'bs4.element.Tag'>
 
@@ -71,6 +55,7 @@ class Noise_remover:
         # print('----------------- body token: ----------------', body_tokens)
 
         body_tokens_clean = self.customize_tokenizer(body_tokens)
+        body_tokens_clean = self.clean_useless_tag(body_tokens_clean)
         # print('***************** body token clean: ****************', body_tokens_clean)
 
         self.prefix_tags = self.prefix_sum_tags(body_tokens_clean)
@@ -81,7 +66,30 @@ class Noise_remover:
         # print("j: " + str(j))
         # print(body_tokens_clean[i : j + 1])
         
-        return body_tokens_clean[i : j + 1]
+        main_contents_list = body_tokens_clean[i : j + 1]
+        joined = " "
+        main_contents = joined.join(main_contents_list)
+        return main_contents
+
+    def clean_useless_tag(self, tokens) -> List: # new
+        new_tokens = []
+        for token in tokens:
+            if "span" in token and '<' in token:
+                continue
+            if "li" in token and '<' in token:
+                continue
+            if "ul" in token and '<' in token:
+                continue
+            if "strong" in token and '<' in token:
+                continue
+            if "polygon" in token and '<' in token:
+                continue
+            if "path" in token and '<' in token:
+                continue
+            if "rect" in token and '<' in token:
+                continue
+            new_tokens.append(token)
+        return new_tokens
 
     def prefix_sum_tags(self, tokens) -> List:  # 1
         prefix_tags = [0]
@@ -182,10 +190,9 @@ class Noise_remover:
                 continue
             texts.append(token)
         return texts
-
+'''
     def retrieve_data(self, cleaned_texts : str):       # 4
         pattern = re.compile(self.DEADLINE_PATTERN)
-
         
         for match in pattern.finditer(cleaned_texts):
             # print('\n', match.group())
@@ -208,7 +215,7 @@ class Noise_remover:
         jsonFile = open("uc_data.json", "w")
         jsonFile.write(jsonString)
         jsonFile.close()
-
+'''
     # def retri_semester(self, cleaned_str: str):
     #     semesters=[]
     #     pattern='(?P<season>[Ss]pring|[Ff]all|[Ss]ummer)\s(?P<year>202[0-9])'
@@ -236,12 +243,15 @@ class Noise_remover:
     #         # self.uc_data['semesters'].append(semester)
     #     return semesters
         
-
+'''
 nr  = Noise_remover()
 # nr.get_url_from_file('visited/pages.csv')
 # nr.get_clear_content()
 
-test_seed = "https://admission.universityofcalifornia.edu/"
+# test_seed = "https://admission.universityofcalifornia.edu/"
+# test_seed = "https://grad.uw.edu/admission/find-a-program/program-detail/#!?progid=709"
+# test_seed = "https://collegedunia.com/usa/college/1813-california-institute-of-technology-pasadena/admission"
+test_seed = "https://www.admissions.caltech.edu/apply/first-year-freshman-applicants/application-requirements"
 cleaned_tag_string = nr.noise_remove(test_seed)
 # print(cleaned_tag_string)
 # nr.find_a_keyword_and_retrieve_relative('Deadline', cleaned_tag_string)
@@ -259,10 +269,12 @@ print(joined)
 # matches = re.search('(May|March)\s[0-9]{1,2}\s([^.]*)Deadline(?P<name>[^.]+)\.', joined)
 # print(matches)
 
-print()
-data = nr.retrieve_data(joined)
-print(data)
-nr.convert_to_json()
+# *
+# print()
+# data = nr.retrieve_data(joined)
+# print(data)
+# nr.convert_to_json()
+'''
 
 # semester = nr.retri_semester(joined)
 # print(semester)
