@@ -1,0 +1,32 @@
+<html>
+    <head>
+        CA
+    </head>
+    <body>
+        <h1>UCLA</h1>
+        <h2 class="tm">
+            <!-- uc_data -->
+            <!-- <span class="tm-title-small">(2019 January to Present)</span> -->
+        </h2>
+        <h3 class="uc">
+            <!-- uc_data -->
+            <!-- <span class="tm-title-small">(2019 January to Present)</span> -->
+        </h3>
+        <script src="{{url_for('static', filename='js/jquery.min.js')}}"></script>
+        <script>
+            $(function() {
+                  output = JSON.parse('{{jsont | tojson}}'); //JSON.parse() 方法将数据转换为 JavaScript 对象。
+                  console.log(output);
+                  document.querySelector(".tm").innerHTML = output.Highlights["Application Portal"];
+                  // document.querySelector(".uc_data").innerHTML = uc_data.deadlines;
+                  // document.querySelector(".uc").innerHTML = output.urls;
+                  // var people = [];
+
+                //   $.each(output.deadlines, function(i, f) {
+                //   var tblRow = "<tr>" + "<td>" + f + "</td>" + "</tr>"
+                //       $(tblRow).appendTo(".output");
+                //   });
+              });
+        </script>
+    </body> 
+</html>

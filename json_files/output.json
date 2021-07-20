@@ -1,0 +1,341 @@
+{
+    "Cal Tech": {
+        "name": "Cal Tech",
+        "urls": [
+            "https://collegedunia.com/usa/college/1813-california-institute-of-technology-pasadena/admission",
+            "https://www.admissions.caltech.edu/apply/first-year-freshman-applicants/application-requirements",
+            "https://collegedunia.com/usa/college/1813-california-institute-of-technology-pasadena/admission",
+            "https://www.admissions.caltech.edu/apply/first-year-freshman-applicants/deadlines"
+        ],
+        "tables": [
+            {
+                "title": "Highlights",
+                "data": [
+                    [
+                        "Year of foundation",
+                        "1891"
+                    ],
+                    [
+                        "Location",
+                        "USA"
+                    ],
+                    [
+                        "Application Portal",
+                        "Common Application or Coalition Application"
+                    ],
+                    [
+                        "Application Fee (non-refundable)",
+                        "UG: 75 USDGraduate: 100 USD"
+                    ],
+                    [
+                        "Acceptance Rate",
+                        "7%"
+                    ],
+                    [
+                        "Average SAT Score",
+                        "No specific score"
+                    ],
+                    [
+                        "Average ACT Score",
+                        "No specific score"
+                    ],
+                    [
+                        "Mode of Payment",
+                        "Visa/Master-Card/Discover"
+                    ],
+                    [
+                        "Rounds of Admission",
+                        "Early Action or Regular Decision"
+                    ],
+                    [
+                        "Work Experience",
+                        "For some graduate programs only"
+                    ],
+                    [
+                        "Financial Aid",
+                        "Grants, Scholarship"
+                    ]
+                ]
+            },
+            {
+                "title": "California Institute of Technology Deadlines",
+                "data": [
+                    [
+                        "Admission round",
+                        "Deadline"
+                    ],
+                    [
+                        "Early action",
+                        "November 1, 2020"
+                    ],
+                    [
+                        "Regular decision",
+                        "January 3, 2021"
+                    ]
+                ]
+            },
+            {
+                "title": "California Institute of Technology Deadlines",
+                "data": [
+                    [
+                        "December 15",
+                        "December 1",
+                        "December 21",
+                        "January 1"
+                    ],
+                    [
+                        "Aeronautics (AE)",
+                        "Applied and Computational Mathematics (ACM)",
+                        "Astrophysics (AY)",
+                        "Environmental Science and Engineering (ESE)"
+                    ],
+                    [
+                        "Applied Mechanics (AM)"
+                    ],
+                    [
+                        "Applied Physics (APh)",
+                        "Biochemistry and Molecular Biophysics (BMB)"
+                    ],
+                    [
+                        "Civil Engineering (CE)",
+                        "Bioengineering (BE)"
+                    ],
+                    [
+                        "Electrical Engineering (EE)",
+                        "Biology (BI)"
+                    ],
+                    [
+                        "Materials Science (MS)",
+                        "Chemical Engineering (ChE)"
+                    ],
+                    [
+                        "Mathematics (MA)",
+                        "Chemistry (CH)"
+                    ],
+                    [
+                        "Mechanical Engineering (ME)",
+                        "Civil Engineering (CE)"
+                    ],
+                    [
+                        "Medical Engineering (MedE)",
+                        "Computation and Neural Systems (CNS)",
+                        "Geobiology (GeBi)"
+                    ],
+                    [
+                        "Social and Decision Neuroscience (SDN)",
+                        "Computer Science (CS)",
+                        "Geochemistry (GeCh)"
+                    ],
+                    [
+                        "Social Science (SS)",
+                        "Computing and Mathematical Sciences (CMS)",
+                        "Geology (GE)"
+                    ],
+                    [
+                        "Space Engineering (SE)",
+                        "Control and Dynamical Systems (CDS)",
+                        "Geophysics (GePh)"
+                    ],
+                    [
+                        "Physics (PH)",
+                        "Neurobiology (NB)",
+                        "Planetary Science (PS)"
+                    ]
+                ]
+            },
+            {
+                "title": "California Institute of Technology Graduate Admissions",
+                "data": [
+                    [
+                        "Requirements",
+                        "MSc in Aeronautics",
+                        "MSc in Mechanical Engineering",
+                        "MSc in Space Engineering",
+                        "MSc in Electrical Engineering",
+                        "MSc in Computer Science"
+                    ],
+                    [
+                        "Application Fee (non-refundable)",
+                        "100 USD",
+                        "100 USD",
+                        "100 USD",
+                        "100 USD",
+                        "100 USD"
+                    ],
+                    [
+                        "GRE",
+                        "Required",
+                        "Optional",
+                        "Required",
+                        "Optional",
+                        "Optional"
+                    ],
+                    [
+                        "Transcripts",
+                        "Required",
+                        "Required",
+                        "Required",
+                        "Required",
+                        "Required"
+                    ],
+                    [
+                        "Work Experience",
+                        "Not required",
+                        "Not required",
+                        "Not Required",
+                        "Not required",
+                        "Not required"
+                    ],
+                    [
+                        "Statement of Purpose",
+                        "Required",
+                        "Required",
+                        "Required",
+                        "Required",
+                        "Required"
+                    ],
+                    [
+                        "Professional CV/resume",
+                        "Required",
+                        "Required",
+                        "Required",
+                        "Required",
+                        "Required"
+                    ],
+                    [
+                        "Recommendations",
+                        "Required (3 letters)",
+                        "Required (3 letters)",
+                        "Required(3 letters)",
+                        "Required (3 letters)",
+                        "Required (3 letters)"
+                    ],
+                    [
+                        "Admission Interview",
+                        "By invitation",
+                        "By invitation",
+                        "By invitation",
+                        "By invitation",
+                        "By invitation"
+                    ]
+                ]
+            }
+        ]
+    },
+    "University of California": {
+        "name": "University of California",
+        "urls": [
+            "https://collegedunia.com/usa/college/1551-university-of-california-los-angeles-los-angeles/admission"
+        ],
+        "tables": [
+            {
+                "title": "UCLA Courses Deadlines & Test Scores",
+                "data": [
+                    [
+                        "Table of ContentsUCLA Deadlines & Test ScoresUCLA Acceptance RateAdmission Requirements for International StudentsAdmission for Transfer4.1 Transfer students Requirements4.2 Visa ProcessUCLA UG Courses5.1 Admission DecisionUCLA PG Courses6.1 Admission RequirementsFAQs"
+                    ]
+                ]
+            },
+            {
+                "title": "UCLA Courses Deadlines & Test Scores",
+                "data": [
+                    [
+                        "Program",
+                        "Application Deadline",
+                        "Test Score Requirements"
+                    ],
+                    [
+                        "M.Sc Computer Science",
+                        "December 1",
+                        "IELTS: 7.0;TOEFL (iBT): 87;TOEFL (PBT): 560"
+                    ],
+                    [
+                        "M.B.A",
+                        "April 21",
+                        "GMAT: 706 OREquivalent GRE;IELTS: 7.0;TOEFL (iBT): 87;TOEFL (PBT): 560"
+                    ],
+                    [
+                        "M.Sc Management - Business Analytics",
+                        "March 12;May 14",
+                        "GMAT: 724 ORGRE: 168 in quant (average of 2019);IELTS: 7.0;TOEFL (iBT): 87;TOEFL (PBT): 560"
+                    ],
+                    [
+                        "M.Sc Mechanical Engineering",
+                        "December 1",
+                        "GRE: 79th\u00a0percentile in verbal, 92 percentile in quant; 4.0 in analytical;IELTS: 7.0;TOEFL (iBT): 87;TOEFL (PBT): 560"
+                    ],
+                    [
+                        "Master of Financial Engineering",
+                        "April 30",
+                        "GRE/GMAT (no minmum requirement);IELTS: 7.0;TOEFL (iBT): 100;TOEFL (PBT): 610"
+                    ],
+                    [
+                        "MS in Manufacturing Engineering",
+                        "December 1",
+                        "GRE: 79th\u00a0percentile in verbal, 92nd\u00a0in quantitative, 4.0 in analytical;IELTS: 7.0;TOEFL (iBT): 87;TOEFL (PBT): 560"
+                    ],
+                    [
+                        "MS in Electrical and Computer Engineering",
+                        "December 1",
+                        "IELTS: 7.0;TOEFL (iBT): 87;TOEFL (PBT): 560"
+                    ],
+                    [
+                        "MS Statistics",
+                        "December 1",
+                        "GRE (no minimum requirement);IELTS: 7.0;TOEFL (iBT): 87;TOEFL (PBT): 560"
+                    ],
+                    [
+                        "Masters in Architecture",
+                        "December 1",
+                        "GRE (no minimum requirement);TOEFL (iBT): 92;IELTS: 7.0"
+                    ],
+                    [
+                        "MS in Physics",
+                        "December 1",
+                        "GRE (optional);IELTS: 7.0;TOEFL (iBT): 87;TOEFL (PBT): 560"
+                    ],
+                    [
+                        "B.Sc Geophysics",
+                        "November 30",
+                        "SAT: 1370 \u2013\u00a01540 (average of 2019);IELTS: 7.0;TOEFL (iBT): 100"
+                    ],
+                    [
+                        "BSc Computer Science",
+                        "November 30",
+                        "SAT: 1370 \u2013\u00a01540 (average of 2019);IELTS: 7.0;TOEFL (iBT): 100"
+                    ],
+                    [
+                        "BSc Civil Engineering",
+                        "November 30",
+                        "SAT: 1370 \u2013\u00a01540 (average of 2019);IELTS: 7.0;TOEFL (iBT): 100"
+                    ]
+                ]
+            },
+            {
+                "title": "UCLA Admissions Requirements for International Students",
+                "data": [
+                    [
+                        "Country",
+                        "Minimum Academic Score"
+                    ],
+                    [
+                        "India",
+                        "Average score over 70"
+                    ],
+                    [
+                        "Malaysia",
+                        "SPM & STPM orSPM & minimum 3 academic GCE A-level exams"
+                    ],
+                    [
+                        "Sri Lanka",
+                        "GCE O & minimum 3 academic A-level exams"
+                    ],
+                    [
+                        "UK",
+                        "at least 5 IGCSE/GCSE/GCE O-Levels, and at least 3 academic GCE A-Level"
+                    ]
+                ]
+            }
+        ]
+    }
+}

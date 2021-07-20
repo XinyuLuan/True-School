@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+
+    <title>Hello, world!</title>
+  </head>
+  <body>
+        <h1>UC Table1</h1>
+        <h2 class="tm">
+            <!-- uc_data -->
+            <!-- <span class="tm-title-small">(2019 January to Present)</span> -->
+        </h2>
+        <h3 class="uc">
+            <!-- uc_data -->
+            <!-- <span class="tm-title-small">(2019 January to Present)</span> -->
+        </h3>
+        <p class="mb-0 uc_data">
+
+        </p>
+        <script src="{{url_for('static', filename='js/jquery.min.js')}}"></script>
+        <script>
+            $(function() {
+                output = JSON.parse('{{jsonv | tojson}}'); 
+                console.log(output);
+
+                $.each(output["Highlights"][0], function(i, f) {
+                var tblRow = "<tr>" + "<td>" + i + f + "</td>" + "</tr>"
+                 $(tblRow).appendTo(".uc_data");
+                });
+            });
+
+
+// <!--            $.each(myobj, walker);-->
+
+// <!--            function walker(key, value) {-->
+// <!--                if (value !== null && typeof value === "object") {-->
+// <!--                    $.each(value, walker);-->
+// <!--                }-->
+// <!--            }-->
+        </script>
+    </body>
+</html>
