@@ -80,7 +80,7 @@ class retriever:
         replace_list = ['\r', '\t', '\n']
         for college in self.data:
             college_url = self.data[college]["urls"][0]
-            # print(college_url)
+            print(college_url)
             # caltech_data = self.data["Cal Tech"]["urls"][0]
             tablelist = c.get_table_components(
                 college_url)    # a list of table
@@ -88,6 +88,9 @@ class retriever:
             # print("----- table title ----\n", tablelist)
             for j in range(len(tablelist)):
                 # get the title of tables
+                print("tablelist[j][1]", j, "---> ", tablelist[j][1])
+                if not tablelist[j][0]:
+                    continue
                 titleoftables = tablelist[j][0].get_text()
                 descriptionOfTable = tablelist[j][1].get_text()
 

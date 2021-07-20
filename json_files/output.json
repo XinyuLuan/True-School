@@ -337,5 +337,261 @@
                 ]
             }
         ]
+    },
+    "IUB": {
+        "name": "IUB",
+        "urls": [
+            "https://collegedunia.com/usa/college/1008-indiana-university-bloomington/admission"
+        ],
+        "tables": [
+            {
+                "title": "Indiana University Highlights",
+                "data": [
+                    [
+                        "Application Portal",
+                        "Online\u00a0"
+                    ],
+                    [
+                        "Application Fee",
+                        "65 USD (Non-Refundable )\u00a0"
+                    ],
+                    [
+                        "Acceptance Rate",
+                        "78%"
+                    ],
+                    [
+                        "Retention Rate",
+                        "91%"
+                    ],
+                    [
+                        "Graduation Rate",
+                        "79%"
+                    ],
+                    [
+                        "Intake Seasons",
+                        "Fall, Spring, Summer\u00a0"
+                    ],
+                    [
+                        "Average SAT Score",
+                        "1150-1360\u00a0"
+                    ],
+                    [
+                        "Average ACT Score",
+                        "24-31\u00a0"
+                    ],
+                    [
+                        "Academic Calendar\u00a0",
+                        "Semester Based Calendar\u00a0"
+                    ],
+                    [
+                        "Mode Of Payment\u00a0",
+                        "Online, Credit Cards\u00a0"
+                    ],
+                    [
+                        "Financial Aid\u00a0",
+                        "Loans, Scholarships, Grants\u00a0"
+                    ]
+                ]
+            },
+            {
+                "title": "Indiana University Admission Deadlines",
+                "data": [
+                    [
+                        "Intake Season",
+                        "Application Deadline\u00a0"
+                    ],
+                    [
+                        "Fall 2020 :Early Action Deadline\u00a0Regular Action Deadline\u00a0",
+                        "November 1February 1"
+                    ],
+                    [
+                        "Spring Session",
+                        "September 15"
+                    ],
+                    [
+                        "Summer Session\u00a0",
+                        "January 1\u00a0"
+                    ]
+                ]
+            },
+            {
+                "title": "Indiana University International Student Admissions",
+                "data": [
+                    [
+                        "Name Of The Test",
+                        "Minimum Test Score"
+                    ],
+                    [
+                        "TOEFL\u00a0",
+                        "79 Internet Based Test550 Paper Based Test"
+                    ],
+                    [
+                        "IELTS\u00a0",
+                        "6.5\u00a0"
+                    ],
+                    [
+                        "SAT (Evidence based reading and writing)",
+                        "560"
+                    ],
+                    [
+                        "ACT (English)",
+                        "21"
+                    ],
+                    [
+                        "MELAB",
+                        "79"
+                    ],
+                    [
+                        "PTE\u00a0",
+                        "53"
+                    ]
+                ]
+            },
+            {
+                "title": "Indiana University International Student Admissions",
+                "data": [
+                    [
+                        "Country",
+                        "Requirement"
+                    ],
+                    [
+                        "Bangladesh",
+                        "Bangladesh Secondary School Certificate and Internal School Transcript from Grade 11"
+                    ],
+                    [
+                        "Brazil",
+                        "Historico Escolar de Ensino Medio fro grade 1 (10) and Grade 2 (11)"
+                    ],
+                    [
+                        "France",
+                        "Releve des Notes Grades 10 and 11"
+                    ],
+                    [
+                        "India",
+                        "Grade 10 Board Exam Results Issue by the Examination body and Internal Grade 11 secondary school transcript"
+                    ],
+                    [
+                        "Japan",
+                        "Upper Secondary School Transcript from Grades10 and 11"
+                    ],
+                    [
+                        "Sri Lanka",
+                        "Sri Lanka O-Levels and Internal Grade 11 Secondary School Transcript*"
+                    ]
+                ]
+            },
+            {
+                "title": "Indiana University Graduate Admissions",
+                "data": [
+                    [
+                        "Requirements",
+                        "MS in Accounting",
+                        "MBA",
+                        "MS in Computer Science",
+                        "Master of Arts in Mathematics",
+                        "MS in Data Science"
+                    ],
+                    [
+                        "Application Fee",
+                        "65 USD",
+                        "65 USD",
+                        "65 USD",
+                        "70 USD",
+                        "65 USD"
+                    ],
+                    [
+                        "Application Deadline",
+                        "December 1",
+                        "Round 1: October 15Round 2: January 5Round 3: March 1Final Round: April 15",
+                        "January 1 February 3 March 23",
+                        "January 15",
+                        "January 1February 3March 23"
+                    ],
+                    [
+                        "Transcripts",
+                        "Required, minimum GPA of 3.2 on 4.0",
+                        "Required",
+                        "Required",
+                        "Required",
+                        "Required"
+                    ],
+                    [
+                        "Letters Of Recommendation",
+                        "Required, 2 professional recommendations",
+                        "Required, 1 letter",
+                        "Required",
+                        "Required, 3 letters",
+                        "Required, 3 letters"
+                    ],
+                    [
+                        "GMAT/ GRE",
+                        "GMAT/ GRE, Minimum GRE: 157 verbal reasoning, 157 quantitative, 4.0 analytical writing; GMAT: 620 total",
+                        "Required",
+                        "Required, GRE scores",
+                        "Required, GRE scores",
+                        "Required, GRE scores"
+                    ],
+                    [
+                        "Personal Statement/ Essay",
+                        "Required, 500-700 words",
+                        "Required",
+                        "Not required",
+                        "Required",
+                        "Required"
+                    ],
+                    [
+                        "Statement of Purpose",
+                        "Not required",
+                        "Not required",
+                        "Required"
+                    ],
+                    [
+                        "CV/ Resume",
+                        "Required",
+                        "Required",
+                        "Required",
+                        "Required",
+                        "Required"
+                    ],
+                    [
+                        "Work Experience",
+                        "Not required",
+                        "Required, at least 2 years",
+                        "Not required",
+                        "Not required",
+                        "Not required"
+                    ],
+                    [
+                        "Interview",
+                        "Required",
+                        "Not required",
+                        "Not required",
+                        "Not required",
+                        "Not required"
+                    ]
+                ]
+            },
+            {
+                "title": "Indiana University Graduate Admissions",
+                "data": [
+                    [
+                        "Undergraduate Tuition Fee",
+                        "$37360"
+                    ],
+                    [
+                        "Postgraduate Tuition Fee",
+                        "$28789"
+                    ],
+                    [
+                        "Campus Accommodation",
+                        "$9821"
+                    ],
+                    [
+                        "Living expenses",
+                        "$14841"
+                    ]
+                ]
+            }
+        ]
     }
 }

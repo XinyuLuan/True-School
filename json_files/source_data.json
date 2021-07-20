@@ -1,17 +1,23 @@
 {
-    "Cal Tech" : {
+    "Cal Tech": {
         "name": "Cal Tech",
-        "urls":[
+        "urls": [
             "https://collegedunia.com/usa/college/1813-california-institute-of-technology-pasadena/admission",
             "https://www.admissions.caltech.edu/apply/first-year-freshman-applicants/application-requirements",
             "https://collegedunia.com/usa/college/1813-california-institute-of-technology-pasadena/admission",
             "https://www.admissions.caltech.edu/apply/first-year-freshman-applicants/deadlines"
         ]
     },
-    "University of California" : {
+    "University of California": {
         "name": "University of California",
-        "urls":[
+        "urls": [
             "https://collegedunia.com/usa/college/1551-university-of-california-los-angeles-los-angeles/admission"
+        ]
+    },
+    "IUB": {
+        "name": "IUB",
+        "urls": [
+            "https://collegedunia.com/usa/college/1008-indiana-university-bloomington/admission"
         ]
     }
 }
